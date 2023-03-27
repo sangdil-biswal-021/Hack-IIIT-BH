@@ -1,0 +1,24 @@
+@font-face {
+    font-family: arcane;
+    src: url("./assets/Arcane\ Nine.otf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'arcane', sans-serif;
+    letter-spacing: 2px;
+    background: #0F161C;
+    color: white;
+    height: 200vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

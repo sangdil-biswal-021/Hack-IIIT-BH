@@ -1,0 +1,57 @@
+.headerSection {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-image: url("../../assets/header-bg.jpg");
+    height: 100vh;
+    height: var(--doc-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerSection::before,
+.headerSection::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    background-color: #08CDFF;
+    height: 50px;
+}
+
+.headerSection::after {
+    left: auto;
+    right: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+@media (max-width: 1500px) {
+
+    .headerSection::before,
+    .headerSection::after {
+        height: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .headerSection::before,
+    .headerSection::after {
+        height: 30px;
+    }
+}
+
+.lottieAnim {
+    width: 35vw;
+    max-width: 40rem;
+}
+
+@media (max-width:730px) {
+    .lottieAnim {
+        width: 85vw;
+    }
+}
