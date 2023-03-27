@@ -19,6 +19,17 @@ body {
     overflow-x: hidden;
 }
 
+/* width */
 ::-webkit-scrollbar {
-    display: none;
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2e3f4d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #08CDFF;
 }
