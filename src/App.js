@@ -12,10 +12,9 @@ export default function App() {
     useEffect(hideLoader, []);
 
     const documentHeight = () => {
-        const doc = document.documentElement
-        doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+        const doc = document.documentElement;
+        doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
     }
-    window.addEventListener("resize", documentHeight)
     documentHeight()
 
     return (

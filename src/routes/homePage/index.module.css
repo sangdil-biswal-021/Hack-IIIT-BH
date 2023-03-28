@@ -130,28 +130,49 @@
     line-height: 1.2rem;
 }
 
-.sponsorsScroll {
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+.sponsorsScrollWrap {
     background: #0b0e13;
     height: 20rem;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.sponsorsScroll {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     overflow: hidden;
+    animation: bannermove 30s linear infinite;
+    position: absolute;
 }
 
 .sScrollCard {
-    height: 7rem;
+    height: 6rem;
     min-width: 10rem;
     background-image: -webkit-linear-gradient(90deg, #0c0e12 0%, rgba(4, 67, 88, 0.5) 100%);
     border-radius: 8px;
-    border: 1px solid rgba(76, 76, 76, 0.3);
-    padding: 1rem;
+    border: 1px solid rgba(1, 201, 252, 0.3);
+    padding: 0.5rem 1.5rem;
 }
 
 .sScrollCard img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
 }

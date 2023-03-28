@@ -24,16 +24,67 @@ export default function HomePage() {
                 </HashLink>
             </section>
 
-            <section className={classes.sponsorsScroll}>
-                <div className={classes.sScrollCard}>
-                    <img src="https://themedox.com/demo/mykd/assets/img/nft/nft_img01.jpg" alt="sponsor" />
+            <section className={classes.sponsorsScrollWrap}>
+                <div className={classes.sponsorsScroll}>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
+                    <div className={classes.sScrollCard}>
+                        <img src="https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg" alt="sponsor" />
+                    </div>
                 </div>
-                <div className={classes.sScrollCard}>
-                    <img src="https://themedox.com/demo/mykd/assets/img/nft/nft_img01.jpg" alt="sponsor" />
-                </div>
-                <div className={classes.sScrollCard}>
-                    <img src="https://themedox.com/demo/mykd/assets/img/nft/nft_img01.jpg" alt="sponsor" />
-                </div>
+            </section>
+
+            <section>
+                
             </section>
         </>
     );
