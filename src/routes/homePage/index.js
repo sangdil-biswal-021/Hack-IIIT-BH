@@ -83,8 +83,11 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <section>
-                
+            <section className={classes.prizesSec}>
+                <div className={classes.headerText}>
+                    <div >WIN LOADS OF EXCITING</div>
+                    <div>PRIZES AND SWAGS</div>
+                </div>
             </section>
         </>
     );

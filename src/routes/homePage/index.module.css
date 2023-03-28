@@ -176,3 +176,37 @@
     object-fit: contain;
     border-radius: 8px;
 }
+
+.prizesSec {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.headerText {
+    text-align: center;
+}
+
+.headerText>div:nth-of-type(1) {
+    color: #08CDFF;
+    font-family: 'Barlow';
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.headerText>div:nth-of-type(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #0083a4, 0 2px 0 #0083a4, 0 3px 0 #0083a4, 0 4px 0 #0083a4;
+}
+
+.headerText::after {
+    content: "";
+    display: block;
+    background-image: url("../../assets/titleshape.svg");
+    width: 65px;
+    height: 5px;
+    margin: 15px auto 0;
+}
