@@ -50,6 +50,7 @@
 .lottieAnim {
     width: 35vw;
     max-width: 40rem;
+    margin-top: 2rem;
 }
 
 @media (max-width:730px) {
