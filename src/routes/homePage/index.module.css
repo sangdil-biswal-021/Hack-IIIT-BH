@@ -7,6 +7,7 @@
     height: 100vh;
     height: var(--doc-height);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -17,7 +18,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 50%;
+    width: 52%;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
     background-color: #08CDFF;
     height: 50px;
@@ -42,6 +43,7 @@
     .headerSection::before,
     .headerSection::after {
         height: 30px;
+        width: 55%;
     }
 }
 
@@ -54,4 +56,102 @@
     .lottieAnim {
         width: 85vw;
     }
+}
+
+.date {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-shadow: 0 1px 0 #0083a4, 0 2px 0 #0083a4, 0 3px 0 #0083a4, 0 4px 0 #0083a4;
+    margin-bottom: 0.2rem;
+}
+
+
+.btnPath {
+    stroke-dasharray: 436;
+    stroke-dashoffset: 0;
+    transition: 3s;
+}
+
+.svgicon {
+    fill: #0f1d29;
+    stroke: #08CDFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    fill-rule: evenodd;
+    z-index: -1;
+}
+
+.svgicon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btnWrap {
+    color: white;
+    font-weight: bold;
+    width: 140px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    white-space: nowrap;
+    padding: 0;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.btnWrap:hover .btnPath {
+    stroke-dashoffset: 872;
+}
+
+.headerDesc {
+    font-family: 'Barlow';
+    letter-spacing: 0;
+    max-width: 30rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0 1rem;
+    opacity: 0.7;
+    margin-top: 0.35rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.2rem;
+}
+
+.sponsorsScroll {
+    background: #0b0e13;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.sScrollCard {
+    height: 7rem;
+    min-width: 10rem;
+    background-image: -webkit-linear-gradient(90deg, #0c0e12 0%, rgba(4, 67, 88, 0.5) 100%);
+    border-radius: 8px;
+    border: 1px solid rgba(76, 76, 76, 0.3);
+    padding: 1rem;
+}
+
+.sScrollCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
