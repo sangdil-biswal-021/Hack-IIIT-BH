@@ -89,7 +89,7 @@
 }
 
 .svgicon {
-    fill: #0f1d29;
+    fill: #132533;
     stroke: #08CDFF;
     position: absolute;
     left: 0;
@@ -207,14 +207,21 @@
 }
 
 .prizesSec {
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
     display: flex;
-    justify-content: center;
-    margin: 5rem 0;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../assets/rewards-bg.jpg");
+    height: 100vh;
 }
 
 .headerText {
     text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 .headerText>div:nth-of-type(1) {
@@ -223,12 +230,14 @@
     letter-spacing: 0.1rem;
     font-weight: bold;
     margin-bottom: 5px;
+    opacity: 0;
 }
 
 .headerText>div:nth-of-type(2) {
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 0 1px 0 #0083a4, 0 2px 0 #0083a4, 0 3px 0 #0083a4, 0 4px 0 #0083a4;
+    opacity: 0;
 }
 
 .headerText::after {
@@ -238,4 +247,100 @@
     width: 65px;
     height: 5px;
     margin: 15px auto 0;
+}
+
+@keyframes goDown {
+    0% {
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+.decoratedBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border: 2px solid #08CDFF;
+    white-space: nowrap;
+    font-size: 15px;
+    padding: 14px 35px;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: 'Barlow';
+    transition: .5s;
+    cursor: pointer;
+}
+
+.decoratedBtn:hover {
+    background: #08CDFF;
+    color: #201f2a;
+}
+
+.decoratedBtn::before,
+.decoratedBtn::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../assets/btndecoration.png");
+    width: 15px;
+    height: 51px;
+    pointer-events: none;
+}
+
+.decoratedBtn::after {
+    left: auto;
+    right: -2px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.decoratedBtnWrap {
+    display: flex;
+    gap: 1.75rem;
+}
+
+@media (max-width: 620px) {
+    .decoratedBtnWrap {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .decoratedBtn {
+        width: fit-content;
+    }
+}
+
+.prizesTab {
+    position: relative;
+    width: 20rem;
+    margin: 5rem 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.prizesTab::before,
+.prizesTab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #08CDFF 50%, transparent 100%);
+}
+
+.prizesTab::after {
+    top: auto;
+    bottom: 0;
 }

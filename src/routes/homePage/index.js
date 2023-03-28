@@ -94,8 +94,22 @@ export default function HomePage() {
 
             <section className={classes.prizesSec}>
                 <div className={classes.headerText}>
-                    <div >WIN LOADS OF EXCITING</div>
-                    <div>PRIZES AND SWAGS</div>
+                    <InView triggerOnce>{({ inView, ref }) => (
+                        <div ref={ref} style={{ animation: inView ? `${classes.goDown} 1s forwards ease` : "none" }}>WIN LOADS OF EXCITING</div>
+                    )}</InView>
+                    <InView triggerOnce>{({ inView, ref }) => (
+                        <div ref={ref} style={{ animation: inView ? `${classes.scaleToFull} 1.2s forwards ease-out` : "none" }}>PRIZES AND SWAGS</div>
+                    )}</InView>
+                </div>
+
+                <div className={classes.decoratedBtnWrap}>
+                    <div className={classes.decoratedBtn}>PRIZES</div>
+                    <div className={classes.decoratedBtn}>SPONSORED TRACKS</div>
+                    <div className={classes.decoratedBtn}>SWAGS</div>
+                </div>
+
+                <div className={classes.prizesTab}>
+                    Hey
                 </div>
             </section>
         </>
