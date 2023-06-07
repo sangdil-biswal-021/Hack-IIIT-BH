@@ -3,10 +3,10 @@
   background: #000;
   /* height: 100vh; */
 }
-.main-text{
+.mainText{
   color: white;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 100px;
 }
 @font-face {
   font-family: 'Valorant';
@@ -18,7 +18,7 @@ h1{
   color: #f20c42;
 }
 
-.vertical-timeline-element-title{
+.verticalTimelineElementTitle{
   font-family: 'Valorant';
   font-weight: lighter;
   color: #f20c42;

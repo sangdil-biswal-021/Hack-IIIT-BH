@@ -2,6 +2,10 @@
     font-family: arcane;
     src: url("./assets/Arcane\ Nine.otf");
 }
+@font-face {
+    font-family: 'Valorant';
+    src: url("./routes/formatPage/fonts/ValorantFont.ttf") format('truetype');
+  }
 
 html {
     scroll-behavior: smooth;
@@ -11,6 +15,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'arcane', sans-serif;
+    /* font-family: 'Valorant', sans-serif; */
     letter-spacing: 2px;
     background: #0F161C;
     color: white;

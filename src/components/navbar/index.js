@@ -31,7 +31,7 @@ export default function NavBar() {
                         <HashLink className={classes.navLink + (pathname === "/" ? (" " + classes.activePath) : "")} to="/">HOME</HashLink>
                         <HashLink className={classes.navLink} to="#">PRIZES</HashLink>
                         <HashLink className={classes.navLink} to="#">SESSIONS</HashLink>
-                        <HashLink className={classes.navLink} to="#">FORMAT</HashLink>
+                        <HashLink className={classes.navLink} to="/format">FORMAT</HashLink>
                         <HashLink className={classes.navLink} to="#">SPONSORS</HashLink>
                     </div>
                     <HashLink className={classes.btnWrap} to="#">
@@ -51,7 +51,7 @@ export default function NavBar() {
                 <HashLink onClick={mobileItemClicked} className={classes.navLink + (pathname === "/" ? (" " + classes.activePath) : "")} to="/">HOME</HashLink>
                 <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">PRIZES</HashLink>
                 <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">SESSIONS</HashLink>
-                <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">FORMAT</HashLink>
+                <HashLink onClick={mobileItemClicked} className={classes.navLink} to="/format">FORMAT</HashLink>
                 <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">SPONSORS</HashLink>
             </div>
         </div>
