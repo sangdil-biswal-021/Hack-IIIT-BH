@@ -1,0 +1,28 @@
+
+.main{
+  background: #000;
+  /* height: 100vh; */
+}
+.main-text{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+@font-face {
+  font-family: 'Valorant';
+  src: url('./fonts/ValorantFont.ttf') format('truetype');
+}
+
+h1{
+  font-family: Valorant, sans-serif;
+  color: #f20c42;
+}
+
+.vertical-timeline-element-title{
+  font-family: 'Valorant';
+  font-weight: lighter;
+  color: #f20c42;
+}
+
+
+
