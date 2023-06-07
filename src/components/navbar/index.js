@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useLocation } from 'react-router-dom';
 
-import logo from "../../assets/logoStatic.svg";
+import logo from "../../assets/logoRED.png";
 
 export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
