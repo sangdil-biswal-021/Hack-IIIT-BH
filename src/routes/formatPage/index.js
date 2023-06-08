@@ -5,12 +5,13 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-// import myImage from '../icons/check.png';
+import myImage from './marker.png';
 import "react-vertical-timeline-component/style.min.css";
 
 const FormatSpace = () => {
   return (
     <>
+    
     
       <VerticalTimeline>
 
@@ -22,7 +23,7 @@ const FormatSpace = () => {
           contentArrowStyle={{ borderRight: "7px solid  #f5cf76" }}
           date="August 1"
           iconStyle={{ background: "#f20c42", color: "#000" }}
-          // icon= {myImage}
+          icon= {myImage}
         >
           <h3 className={classes.verticalTimelineElementTitle}>Round 1</h3>
           <p>

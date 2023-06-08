@@ -23,6 +23,10 @@ h1{
   font-weight: lighter;
   color: #f20c42;
 }
+.verticalTimelineElementTitle p{
+  font-family:'Courier New', Courier, monospace;
+  color: #f20c42;
+}
 
 
 
