@@ -32,7 +32,7 @@ export default function NavBar() {
                         <HashLink className={classes.navLink} to="#">PRIZES</HashLink>
                         <HashLink className={classes.navLink} to="#">SESSIONS</HashLink>
                         <HashLink className={classes.navLink} to="/format">FORMAT</HashLink>
-                        <HashLink className={classes.navLink} to="#">SPONSORS</HashLink>
+                        <HashLink className={classes.navLink} to="/sponsor">SPONSORS</HashLink>
                     </div>
                     <HashLink className={classes.btnWrap} to="#">
                         <div className={classes.svgicon} id="svg-6" data-svg-icon="assets/img/icons/shape.svg"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 188 61">
@@ -52,7 +52,7 @@ export default function NavBar() {
                 <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">PRIZES</HashLink>
                 <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">SESSIONS</HashLink>
                 <HashLink onClick={mobileItemClicked} className={classes.navLink} to="/format">FORMAT</HashLink>
-                <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">SPONSORS</HashLink>
+                <HashLink onClick={mobileItemClicked} className={classes.navLink} to="/sponsor">SPONSORS</HashLink>
             </div>
         </div>
     );

@@ -1,0 +1,47 @@
+.grid {
+    margin: 20px;
+    width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  justify-content: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: black;
+    color: white;
+  }
+  
+  th:first-child,
+  td:first-child {
+    background-color: red;
+    color: white;
+  }
+  
+  td {
+    background-color: black;
+    color: white;
+    cursor: default;
+  }
+  
+  td:hover {
+    background-color: #333;
+  }
+
+  h1{
+    font-family: Valorant, sans-serif;
+    color: #f20c42;
+    justify-content: center;
+  }
+
+  
+  
