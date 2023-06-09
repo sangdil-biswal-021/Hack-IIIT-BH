@@ -9,6 +9,14 @@
   background-size: cover;
   /* height: 100vh; */
 }
+@media ((max-width: 1120px)){
+  .main{
+    background-image: url('../../assets/mainbgVALO.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:-170px;
+  }
+}
 
 .mainText{
   color: white;

@@ -58,29 +58,55 @@
         opacity: 1;
     }
 }
+@keyframes float {
+    0%{
+        transform: translateY(0rem);
+    }
+    25% {
+        transform: translateY(1rem);
+        
+    }
+    50%{
+        transform: translateY(0rem);
+
+    }
+    75%{
+        transform: translateY(-1rem);
+
+    }
+
+    100% {
+        transform: translateY(0rem);
+        
+    }
+}
 .parallaX{
     z-index: -1;
     padding-top: 400px;
     position: absolute;
-    /* width: fit-content;
-    height: fit-content; */
+    overflow-x: hidden;
+    
     filter:blur(2px) opacity(60%);
 
+}
+@media (max-width: 640px) {
+
+   .parallaX{
+    z-index: -1;
+    padding-top: 400px;
+    width: 100vw;
+    }
 }
 .parallaX1{
     z-index: -1;
     padding-top: 400px;
-    position: absolute;
+    position:absolute;
     scale: 70%;
-    /* display: none; */
-    
-    /* z-index: -1;
-    padding-top: 100px;
-    padding-right: 900px;
-    position: absolute;
-    scale: 120%; */
-   
-    /* filter:blur(2px) opacity(60%); */
+    transform: translate(100px,10px);
+    animation-name: float ;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 
 }
 
@@ -173,7 +199,7 @@
 }
 
 .headerDesc {
-    font-family: 'Valorant';
+    /* font-family: 'Valorant'; */
     letter-spacing: 0;
     max-width: 30rem;
     text-align: center;
