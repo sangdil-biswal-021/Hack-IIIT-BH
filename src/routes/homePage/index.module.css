@@ -20,7 +20,7 @@
     bottom: 0;
     width: 52%;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
-    background-color: #08CDFF;
+    background-color: #f94555;
     height: 50px;
 }
 
@@ -71,12 +71,19 @@
         width: 85vw;
     }
 }
+.staticTBC{
+background-image: "../../assets/logoRED.png";
+height: 250px;
+width: 500px;
+padding-left: 30px;
+}
 
 .date {
     font-size: 2rem;
+    font-family: 'Valorant';
     font-weight: bold;
     margin-top: 2rem;
-    text-shadow: 0 1px 0 #0083a4, 0 2px 0 #0083a4, 0 3px 0 #0083a4, 0 4px 0 #0083a4;
+    text-shadow: 0 1px 0 #a40000, 0 2px 0 #a40000, 0 3px 0 #a40000, 0 4px 0 #a40000;
     margin-bottom: 0.2rem;
     opacity: 0;
 }
@@ -90,7 +97,7 @@
 
 .svgicon {
     fill: #132533;
-    stroke: #08CDFF;
+    stroke: #ff0808;
     position: absolute;
     left: 0;
     top: 0;
@@ -146,7 +153,7 @@
 }
 
 .headerDesc {
-    font-family: 'Barlow';
+    font-family: 'Valorant';
     letter-spacing: 0;
     max-width: 30rem;
     text-align: center;
@@ -171,7 +178,7 @@
 }
 
 .sponsorsScrollWrap {
-    background: #0b0e13;
+    background: #130b0b;
     height: 20rem;
     display: flex;
     align-items: center;
@@ -193,9 +200,9 @@
 .sScrollCard {
     height: 6rem;
     min-width: 10rem;
-    background-image: -webkit-linear-gradient(90deg, #0c0e12 0%, rgba(4, 67, 88, 0.5) 100%);
+    background-image: -webkit-linear-gradient(90deg, #120c0c 0%, rgba(88, 4, 4, 0.5) 100%);
     border-radius: 8px;
-    border: 1px solid rgba(1, 201, 252, 0.3);
+    border: 1px solid rgba(252, 1, 1, 0.3);
     padding: 0.5rem 1.5rem;
 }
 
@@ -214,18 +221,19 @@
     flex-direction: column;
     background-position: center;
     background-size: cover;
-    background-image: url("../../assets/rewards-bg.jpg");
+    background-image: url("../../assets/static-bg-prizes.png");
     height: 100vh;
 }
 
 .headerText {
+    font-family: Valorant;
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 2.5rem;
 }
 
 .headerText>div:nth-of-type(1) {
-    color: #08CDFF;
+    color: #ff0808;
     font-family: 'Barlow';
     letter-spacing: 0.1rem;
     font-weight: bold;
@@ -236,7 +244,7 @@
 .headerText>div:nth-of-type(2) {
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 0 1px 0 #0083a4, 0 2px 0 #0083a4, 0 3px 0 #0083a4, 0 4px 0 #0083a4;
+    text-shadow: 0 1px 0 #a40000, 0 2px 0 #a40000, 0 3px 0 #a40000, 0 4px 0 #a40000;
     opacity: 0;
 }
 
@@ -266,7 +274,7 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    border: 2px solid #08CDFF;
+    border: 2px solid #ff0808;
     white-space: nowrap;
     font-size: 15px;
     padding: 14px 35px;
@@ -280,8 +288,8 @@
 }
 
 .decoratedBtn:hover {
-    background: #08CDFF;
-    color: #201f2a;
+    background: #ff0808;
+    color: #2a1f1f;
 }
 
 .decoratedBtn::before,
@@ -295,6 +303,8 @@
     width: 15px;
     height: 51px;
     pointer-events: none;
+    filter:   hue-rotate(180deg) brightness(70%)  contrast(200%);
+
 }
 
 .decoratedBtn::after {
@@ -337,7 +347,7 @@
     top: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, #08CDFF 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #ff0808 50%, transparent 100%);
 }
 
 .prizesTab::after {

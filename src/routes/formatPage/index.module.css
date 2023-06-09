@@ -2,7 +2,14 @@
 .main{
   background: #000;
   /* height: 100vh; */
+  background-image: url('./img/valoBG.png');
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
 }
+
 .mainText{
   color: white;
   text-align: center;

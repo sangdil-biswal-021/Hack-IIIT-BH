@@ -31,10 +31,10 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #2e3f4d;
+    background: #3c3a4c;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #08CDFF;
+    background: #f2636b;
 }

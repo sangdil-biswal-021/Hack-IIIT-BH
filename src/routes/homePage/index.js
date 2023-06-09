@@ -1,8 +1,9 @@
 import classes from "./index.module.css";
 import { useLottie } from "lottie-react";
-import logoAnim from "../../assets/logoAnimated.json";
+import logoAnim from "../../assets/logoAnimRED.json";
 import { HashLink } from "react-router-hash-link";
 import { InView } from 'react-intersection-observer';
+import myImage from "../../assets/logoRED.png";
 
 export default function HomePage() {
     const options = {
@@ -14,6 +15,11 @@ export default function HomePage() {
     return (
         <>
             <section className={classes.headerSection}>
+                {/* <InView triggerOnce>{({ inView, ref }) => (
+                    <div className={classes.lottieAnim} ref={ref} style={{ animation: inView ? `${classes.goUp} 1s forwards .3s ease` : "none" }}>
+                        <img className={classes.staticTBC} src={myImage}/>
+                        </div>
+                )}</InView> */}
                 <InView triggerOnce>{({ inView, ref }) => (
                     <div className={classes.lottieAnim} ref={ref} style={{ animation: inView ? `${classes.goUp} 1s forwards .3s ease` : "none" }}>{View}</div>
                 )}</InView>
@@ -93,6 +99,11 @@ export default function HomePage() {
             </section>
 
             <section className={classes.prizesSec}>
+                {/* <img src="../../assets/PLX-bg-1.png"></img>
+                <img src="../../assets/PLX-bg-2.png"></img>
+                <img src="../../assets/PLX-bg-3.png"></img>
+                <img src="../../assets/PLX-bg-4.png"></img>
+                <img src="../../assets/PLX-bg-6.png"></img> */}
                 <div className={classes.headerText}>
                     <InView triggerOnce>{({ inView, ref }) => (
                         <div ref={ref} style={{ animation: inView ? `${classes.goDown} 1s forwards ease` : "none" }}>WIN LOADS OF EXCITING</div>
