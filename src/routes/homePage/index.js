@@ -3,7 +3,8 @@ import { useLottie } from "lottie-react";
 import logoAnim from "../../assets/logoAnimRED.json";
 import { HashLink } from "react-router-hash-link";
 import { InView } from 'react-intersection-observer';
-import myImage from "../../assets/logoRED.png";
+import myImg from "../../assets/bottomVC.png";
+import myImg1 from "../../assets/sideVC.png";
 
 export default function HomePage() {
     const options = {
@@ -15,13 +16,19 @@ export default function HomePage() {
     return (
         <>
             <section className={classes.headerSection}>
-                {/* <InView triggerOnce>{({ inView, ref }) => (
-                    <div className={classes.lottieAnim} ref={ref} style={{ animation: inView ? `${classes.goUp} 1s forwards .3s ease` : "none" }}>
-                        <img className={classes.staticTBC} src={myImage}/>
-                        </div>
-                )}</InView> */}
+                
                 <InView triggerOnce>{({ inView, ref }) => (
                     <div className={classes.lottieAnim} ref={ref} style={{ animation: inView ? `${classes.goUp} 1s forwards .3s ease` : "none" }}>{View}</div>
+                )}</InView>
+                <InView triggerOnce>{({ inView, ref }) => (
+                    <div className={classes.parallaX} ref={ref} style={{ animation: inView ? `${classes.goUp} 1s forwards .3s ease` : "none" }}>
+                        <img src ={myImg} alt="none"/>
+                        </div>
+                )}</InView>
+                <InView triggerOnce>{({ inView, ref }) => (
+                    <div className={classes.parallaX1} ref={ref} style={{ animation: inView ? `${classes.goUp} 1s forwards .3s ease` : "none" }}>
+                        <img src ={myImg1} alt="none"/>
+                        </div>
                 )}</InView>
                 <InView triggerOnce>{({ inView, ref }) => (
                     <div className={classes.date} ref={ref} style={{ animation: inView ? `${classes.goUp} 1s forwards .6s ease` : "none" }}>XX - YY JULY 2023</div>
