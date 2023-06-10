@@ -22,11 +22,7 @@ export default function App() {
         <>
             <AnimatedCursor innerSize={15} outerSize={50} outerScale={2} color='255,0,0' />
             <NavBar />
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            
             <Routes>
                 <Route element={<RouteTransition />}>
                     <Route path="/" element={<HomePage />} />
