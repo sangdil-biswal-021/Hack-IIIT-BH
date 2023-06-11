@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b9c0dceb.css",
+    "main.js": "/static/js/main.706b70b7.js",
+    "static/media/valoBG.png": "/static/media/valoBG.1c78d565ceae0015565b.png",
+    "static/media/mainbgVALO.png": "/static/media/mainbgVALO.be78b0947db07eb45410.png",
+    "static/media/bottomVC.png": "/static/media/bottomVC.5c03d52759e152b6abd4.png",
+    "static/media/sideVC.png": "/static/media/sideVC.5b8437b40cdea954cc3c.png",
+    "static/media/static-bg-prizes.png": "/static/media/static-bg-prizes.c7ea7ccfc2649d874134.png",
+    "static/media/Arcane Nine.otf": "/static/media/Arcane Nine.b713d56aa4a81e0696c3.otf",
+    "static/media/ValorantFont.ttf": "/static/media/ValorantFont.86ec8370af32018a2391.ttf",
+    "index.html": "/index.html",
+    "static/media/titleshape.svg": "/static/media/titleshape.4399dd8788f70af771a1.svg",
+    "main.b9c0dceb.css.map": "/static/css/main.b9c0dceb.css.map",
+    "main.706b70b7.js.map": "/static/js/main.706b70b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9c0dceb.css",
+    "static/js/main.706b70b7.js"
+  ]
+}
