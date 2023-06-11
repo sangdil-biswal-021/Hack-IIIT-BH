@@ -29,10 +29,10 @@ export default function NavBar() {
                     <img src={logo} alt="logo" className={classes.logo} />
                     <div className={classes.midLinks}>
                         <HashLink className={classes.navLink + (pathname === "/" ? (" " + classes.activePath) : "")} to="/">HOME</HashLink>
-                        <HashLink className={classes.navLink} to="#">PRIZES</HashLink>
-                        <HashLink className={classes.navLink} to="#">SESSIONS</HashLink>
-                        <HashLink className={classes.navLink} to="/format">FORMAT</HashLink>
-                        <HashLink className={classes.navLink} to="/sponsor">SPONSORS</HashLink>
+                        <HashLink className={classes.navLink + (pathname === "/prizes" ? (" " + classes.activePath) : "")} to="/prizes">PRIZES</HashLink>
+                        <HashLink className={classes.navLink + (pathname === "/sessions" ? (" " + classes.activePath) : "")} to="/sessions">SESSIONS</HashLink>
+                        <HashLink className={classes.navLink + (pathname === "/format" ? (" " + classes.activePath) : "")} to="/format">FORMAT</HashLink>
+                        <HashLink className={classes.navLink + (pathname === "/sponsor" ? (" " + classes.activePath) : "")} to="/sponsor">SPONSORS</HashLink>
                     </div>
                     <HashLink className={classes.btnWrap} to="#">
                         <div className={classes.svgicon} id="svg-6" data-svg-icon="assets/img/icons/shape.svg"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 188 61">
@@ -49,10 +49,10 @@ export default function NavBar() {
             </nav >
             <div className={classes.menuBack + (menuOpen ? (" " + classes.menuOpen) : "")}>
                 <HashLink onClick={mobileItemClicked} className={classes.navLink + (pathname === "/" ? (" " + classes.activePath) : "")} to="/">HOME</HashLink>
-                <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">PRIZES</HashLink>
-                <HashLink onClick={mobileItemClicked} className={classes.navLink} to="#">SESSIONS</HashLink>
-                <HashLink onClick={mobileItemClicked} className={classes.navLink} to="/format">FORMAT</HashLink>
-                <HashLink onClick={mobileItemClicked} className={classes.navLink} to="/sponsor">SPONSORS</HashLink>
+                <HashLink onClick={mobileItemClicked} className={classes.navLink + (pathname === "/prizes" ? (" " + classes.activePath) : "")} to="/prizes">PRIZES</HashLink>
+                <HashLink onClick={mobileItemClicked} className={classes.navLink + (pathname === "/sessions" ? (" " + classes.activePath) : "")} to="/sessions">SESSIONS</HashLink>
+                <HashLink onClick={mobileItemClicked} className={classes.navLink + (pathname === "/format" ? (" " + classes.activePath) : "")} to="/format">FORMAT</HashLink>
+                <HashLink onClick={mobileItemClicked} className={classes.navLink + (pathname === "/sponsor" ? (" " + classes.activePath) : "")} to="/sponsor">SPONSORS</HashLink>
             </div>
         </div>
     );

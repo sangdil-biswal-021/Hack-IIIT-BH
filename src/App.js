@@ -5,6 +5,7 @@ import Sponsor from "./routes/sponsorPage"
 import NavBar from "./components/navbar";
 import HomePage from "./routes/homePage";
 import Format from "./routes/formatPage";
+import Prizes from "./routes/prizesPage/app";
 
 import RouteTransition from "./utils/routeTransition";
 import hideLoader from "./utils/hideLoader";
@@ -28,6 +29,8 @@ export default function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/format" element={<Format/>} />
                     <Route path="/sponsor" element={<Sponsor/>} />
+                    <Route path="/prizes" element={<Prizes/>} />
+                    <Route path="/sessions" element={<Prizes/>} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Route>
             </Routes>
