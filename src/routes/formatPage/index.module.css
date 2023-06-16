@@ -36,12 +36,18 @@ h1{
 .verticalTimelineElementTitle{
   font-family: 'Valorant';
   font-weight: lighter;
-  color: #f20c42;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #a40000, 0 2px 0 #a40000, 0 3px 0 #a40000, 0 4px 0 #a40000;
+
 }
-.verticalTimelineElementTitle p{
-  font-family:'Courier New', Courier, monospace;
-  color: #f20c42;
+.verticalTimelineElementP{
+  /* font-family:'Courier New', Courier, monospace; */
+  color: #f9bebe;
 }
+.img{
+filter: invert();
+}
+
 
 
 

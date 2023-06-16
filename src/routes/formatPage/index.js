@@ -1,13 +1,21 @@
 import React from "react";
 import classes from "../formatPage/index.module.css";
 
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-// import myImage from './marker.png';
+import myImg from './img/marker.png';
+import user from './img/users-alt.png';
+import phoneCall from './img/phone-call.png';
+import checkedImg from './img/checked.png';
+import styles from './index.module.css';
 import "react-vertical-timeline-component/style.min.css";
 
+const CustomIcon = ({ icon }) => {
+  return <img src={icon} alt="Timeline Icon" className={styles.img}  />;
+};
 const FormatSpace = () => {
   return (
     <>
@@ -19,11 +27,12 @@ const FormatSpace = () => {
           contentStyle={{ background: "#2e020c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f5cf76" }}
           date="August 1"
-          iconStyle={{ background: "#f20c42", color: "#000" }}
-          // icon= {myImage}
+          iconStyle={{ background: "#f20c42", color: "#000", display: "flex", padding:"10px" ,scale:"80%"}}
+
+          icon={<CustomIcon icon={myImg} />}
         >
           <h3 className={classes.verticalTimelineElementTitle}>Round 1</h3>
-          <p>
+          <p className={classes.verticalTimelineElementP}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -41,13 +50,13 @@ const FormatSpace = () => {
           contentStyle={{ background: "#2e020c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f5cf76" }}
           date="August 10"
-          iconStyle={{ background: "#f20c42", color: "#fff" }}
-          // icon={<WorkIcon />}
+          iconStyle={{ background: "#f20c42", color: "#000", display: "flex", padding:"10px" ,scale:"80%"}}
+          icon={<CustomIcon icon={user} />}
         >
           <h3 className={classes.verticalTimelineElementTitle}>
             Idea submission deadline
           </h3>
-          <p>
+          <p className={classes.verticalTimelineElementP}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -65,13 +74,13 @@ const FormatSpace = () => {
           contentStyle={{ background: "#2e020c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f5cf76" }}
           date="August 12"
-          iconStyle={{ background: "#f20c42", color: "#fff" }}
-          // icon={<WorkIcon />}
+          iconStyle={{ background: "#f20c42", color: "#000", display: "flex", padding:"15px" ,scale:"80%"}}
+          icon={<CustomIcon icon={phoneCall} />}
         >
           <h3 className={classes.verticalTimelineElementTitle}>
             Round 1 Result Declaration
           </h3>
-          <p>
+          <p className={classes.verticalTimelineElementP}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -89,13 +98,13 @@ const FormatSpace = () => {
           contentStyle={{ background: "#2e020c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f5cf76" }}
           date="september 7"
-          iconStyle={{ background: "#f20c42", color: "#fff" }}
-          // icon={<WorkIcon />}
+          iconStyle={{ background: "#f20c42", color: "#000", display: "flex", padding:"15px" ,scale:"80%"}}
+          icon={<CustomIcon icon={phoneCall} />}
         >
           <h3 className={classes.verticalTimelineElementTitle}>
             Offline Inauguration
           </h3>
-          <p>
+          <p className={classes.verticalTimelineElementP}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -113,13 +122,13 @@ const FormatSpace = () => {
           contentStyle={{ background: "#2e020c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f5cf76" }}
           date="September 8 - September 9"
-          iconStyle={{ background: "#f20c42", color: "#fff" }}
-          // icon={<WorkIcon />}
+          iconStyle={{ background: "#f20c42", color: "#000", display: "flex", padding:"15px" ,scale:"80%"}}
+          icon={<CustomIcon icon={phoneCall} />}
         >
           <h3 className={classes.verticalTimelineElementTitle}>
             Offline Hackathon
           </h3>
-          <p>
+          <p className={classes.verticalTimelineElementP}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -137,13 +146,13 @@ const FormatSpace = () => {
           contentStyle={{ background: "#2e020c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f5cf76" }}
           date="September 10"
-          iconStyle={{ background: "#f20c42", color: "#fff" }}
-          // icon={<WorkIcon />}
+          iconStyle={{ background: "#f20c42", color: "#000", display: "flex", padding:"10px" ,scale:"80%"}}
+          icon={<CustomIcon icon={checkedImg} />}
         >
           <h3 className={classes.verticalTimelineElementTitle}>
             Result declaration and Prize Distribution
           </h3>
-          <p>
+          <p className={classes.verticalTimelineElementP}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
