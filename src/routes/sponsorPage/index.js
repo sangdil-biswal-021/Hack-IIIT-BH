@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.module.css";
+import "./indexTemp.css";
 import { motion } from 'framer-motion';
 import Grid from "./grid";
 
