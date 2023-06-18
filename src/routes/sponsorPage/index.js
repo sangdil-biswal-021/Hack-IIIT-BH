@@ -1,7 +1,8 @@
 import React from "react";
 import "./indexTemp.css";
-import { motion } from 'framer-motion';
 import Grid from "./grid";
+import { InView } from 'react-intersection-observer';
+
 
 // const xyz="http://localhost:3000/Brochuree.pdf";
 const DownloadFile=()=>{
@@ -17,7 +18,7 @@ const DownloadFile=()=>{
 
 const Sponsor = () => {
 
-  const backgroundImagee="../../assets/1080940.jpg";
+  
 
   const DownloadFile=()=>{
     // const fileName=url.split('/',).pop();
@@ -30,18 +31,21 @@ const Sponsor = () => {
       // atag.remove();
   }
   return (
-    <motion.div className="spons-conatiner" initial="hidden"
+    <div className="spons-conatiner" initial="hidden"
     animate="visible"
     variants={{
       hidden: { opacity: 0, scale: 0.5 },
       visible: { opacity: 1, scale: 1 },
     }}
     >
-        <div className="hello">
+      <InView triggerOnce>{({ inView, ref }) => (
+  <div className="hello" ref={ref} style={{ animation: inView ? 'goUPM 1s forwards .3s ease' : "none" }}>
+
+        {/* <div className="hello"> */}
           <div className="blurBG"></div>
-          <ul className="my-list">
-          <h1>Why Sponsor Us?</h1>
-          <h3>
+          {/* <ul className="my-list"> */}
+          <h1 className="EA" >Why Sponsor Us?</h1>
+          <h3 >
            <li> Sponsoring the hackathon provides a unique opportunity to connect
             with the brightest minds in the industry. By partnering with us, you
             will be able to showcase your brand to a highly engaged and talented
@@ -65,42 +69,46 @@ const Sponsor = () => {
             encourage innovation, and inspire new ideas.</li>
             <br />
           </h3>
-          </ul>
+          {/* </ul> */}
         </div>
+        )}</InView>
         <br />
         <br />
         <div className="hello">
-          <div className="my-list">
-          <h1>Why be our Title Sponsor?</h1>
+          {/* <ul className="my-list"> */}
+          <h1 className="EA">Why be our Title Sponsor?</h1>
           <h3>
             <li>
             Being a title sponsor, your brand will be prominently displayed and
             recognized throughout the hackathons. This will increase your brand
             awareness and recognition among a tech-savvy audiences
             </li><br />
-            <br />
+           
             <li>
             We will offer our title sponsor to conduct workshops to spread
             product   awareness and enhance brand reach among the target audience
             </li><br />
-            <br /><li>
+            <li>
             The title sponsors brand name and logo &ill be used everywhere i.e
             in all the posters, social media etc</li>
             <br />
-            <br />
+           
             <li>
             Sponsoring a hackathon can also show your commitment to the tech
             community and support for innovation and entrepreneurship</li>
           </h3>
-          </div>
+          {/* </ul> */}
         </div>
         <br />
         <br />
+        <div className="hello">
+        <h1 className="EA"> SPONSORSHIP PACKAGE</h1>
         <Grid />
+        </div>
         <br />
         <br />
         <div className="hello">
-          <h1>Contact Us</h1>
+          <h1 className="EA">Contact Us</h1>
           <div className="row">
             <h2>Feel free to reach us at :</h2>
             <h3>
@@ -139,11 +147,11 @@ const Sponsor = () => {
           </div>
 
           <div className="row">
-            <button className="xyz" onClick={DownloadFile }>Download</button>
+            <button className="btn" onClick={DownloadFile }>Download</button>
           </div>
         </div>
       
-    </motion.div>
+    </div>
   );
 };
 

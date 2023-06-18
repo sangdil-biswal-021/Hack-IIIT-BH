@@ -1,9 +1,13 @@
+
 .grid {
-    margin: 20px;
+    /* margin: 20px; */
     width: fit-content;
   max-width: 100%;
   overflow-x: auto;
   justify-content: center;
+    /* background-image: url("../formatPage/img/valoBG.png"); */
+    font-weight:lighter;
+
   }
   
   table {
@@ -17,29 +21,33 @@
   }
   
   th {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.758);
     color: white;
   }
   
   th:first-child,
   td:first-child {
-    background-color: red;
+    background-color: #f94554de;
     color: white;
   }
   
   td {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.516);
     color: white;
     cursor: default;
+    transition: .3s;
+    
   }
   
   td:hover {
     background-color: #333;
+    font-weight:900;
+    
   }
 
   h1{
     font-family: Valorant, sans-serif;
-    color: #f20c42;
+    color: #f94555;
     justify-content: center;
   }
 

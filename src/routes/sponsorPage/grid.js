@@ -26,7 +26,6 @@ class Grid extends React.Component {
 
     return (
       <div className="grid">
-        <h1>Sponsorship Packages</h1>
         <table>
           <thead>
             <tr>
