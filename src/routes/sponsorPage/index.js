@@ -3,6 +3,7 @@ import "./indexTemp.css";
 import classes from "./index.module.css";
 import Grid from "./grid";
 import { InView } from 'react-intersection-observer';
+import Tilt from 'react-parallax-tilt';
 
 
 // const xyz="http://localhost:3000/Brochuree.pdf";
@@ -40,6 +41,7 @@ const Sponsor = () => {
     }}
     >
       <InView triggerOnce>{({ inView, ref }) => (
+        <Tilt  glareEnable={true} glareColor= "#194555"  tiltMaxAngleX={10} tiltMaxAngleY={10} >
   <div className="hello" ref={ref} style={{ animation: inView ? `${classes.goRight} 1s forwards .3s ease` : "none" }}>
 
         {/* <div className="hello"> */}
@@ -72,10 +74,12 @@ const Sponsor = () => {
           </h3>
           {/* </ul> */}
         </div>
+        </Tilt>
         )}</InView>
         <br />
         <br />
         <InView triggerOnce>{({ inView, ref }) => (
+           <Tilt glareEnable={true} glareColor= "#194555"  tiltMaxAngleX={10} tiltMaxAngleY={10}>
         <div className="hello" ref={ref} style={{ animation: inView ? `${classes.goLeft} 1s forwards .3s ease` : "none" }}>
           {/* <ul className="my-list"> */}
           <h1 className="EA">Why be our Title Sponsor?</h1>
@@ -101,14 +105,17 @@ const Sponsor = () => {
           </h3>
           {/* </ul> */}
         </div>
+        </Tilt>
          )}</InView>
         <br />
         <br />
         <InView triggerOnce>{({ inView, ref }) => (
+          <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} >
         <div className="hello" ref={ref} style={{ animation: inView ? `${classes.goRight} 1s forwards .3s ease` : "none" }}>
         <h1 className="EA"> SPONSORSHIP PACKAGE</h1>
         <Grid />
         </div>
+        </Tilt>
         )}</InView>
         <br />
         <br />

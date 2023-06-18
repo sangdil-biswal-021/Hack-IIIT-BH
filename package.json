@@ -12,6 +12,7 @@
     "react-animated-cursor": "^2.5.2",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.3",
+    "react-parallax-tilt": "^1.7.147",
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.9.0",
     "react-router-hash-link": "^2.4.3",
