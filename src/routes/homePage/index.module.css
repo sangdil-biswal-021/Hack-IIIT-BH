@@ -85,6 +85,7 @@
     padding-top: 400px;
     position: absolute;
     overflow-x: hidden;
+    opacity: 0 ;
     
     filter:blur(2px) opacity(60%);
 
@@ -107,6 +108,8 @@
     /* animation-duration: 4s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite; */
+    opacity: 0 ;
+
 
 }
 

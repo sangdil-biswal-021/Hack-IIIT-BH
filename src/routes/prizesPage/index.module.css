@@ -89,6 +89,7 @@ body {
     padding-top: 400px;
     position: absolute;
     overflow-x: hidden;
+    opacity: 0;
     
     filter:blur(2px) opacity(60%);
 

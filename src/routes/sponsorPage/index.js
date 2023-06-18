@@ -1,5 +1,6 @@
 import React from "react";
 import "./indexTemp.css";
+import classes from "./index.module.css";
 import Grid from "./grid";
 import { InView } from 'react-intersection-observer';
 
@@ -18,7 +19,7 @@ const DownloadFile=()=>{
 
 const Sponsor = () => {
 
-  
+  const backgroundImagee="../../assets/1080940.jpg";
 
   const DownloadFile=()=>{
     // const fileName=url.split('/',).pop();
@@ -39,7 +40,7 @@ const Sponsor = () => {
     }}
     >
       <InView triggerOnce>{({ inView, ref }) => (
-  <div className="hello" ref={ref} style={{ animation: inView ? 'goUPM 1s forwards .3s ease' : "none" }}>
+  <div className="hello" ref={ref} style={{ animation: inView ? `${classes.goRight} 1s forwards .3s ease` : "none" }}>
 
         {/* <div className="hello"> */}
           <div className="blurBG"></div>
@@ -74,7 +75,8 @@ const Sponsor = () => {
         )}</InView>
         <br />
         <br />
-        <div className="hello">
+        <InView triggerOnce>{({ inView, ref }) => (
+        <div className="hello" ref={ref} style={{ animation: inView ? `${classes.goLeft} 1s forwards .3s ease` : "none" }}>
           {/* <ul className="my-list"> */}
           <h1 className="EA">Why be our Title Sponsor?</h1>
           <h3>
@@ -99,15 +101,20 @@ const Sponsor = () => {
           </h3>
           {/* </ul> */}
         </div>
+         )}</InView>
         <br />
         <br />
-        <div className="hello">
+        <InView triggerOnce>{({ inView, ref }) => (
+        <div className="hello" ref={ref} style={{ animation: inView ? `${classes.goRight} 1s forwards .3s ease` : "none" }}>
         <h1 className="EA"> SPONSORSHIP PACKAGE</h1>
         <Grid />
         </div>
+        )}</InView>
         <br />
         <br />
-        <div className="hello">
+
+        <InView triggerOnce>{({ inView, ref }) => (
+        <div className="hello" ref={ref} style={{ animation: inView ? `${classes.goLeft} 1s forwards .3s ease` : "none" }}>
           <h1 className="EA">Contact Us</h1>
           <div className="row">
             <h2>Feel free to reach us at :</h2>
@@ -150,6 +157,7 @@ const Sponsor = () => {
             <button className="btn" onClick={DownloadFile }>Download</button>
           </div>
         </div>
+        )}</InView>
       
     </div>
   );

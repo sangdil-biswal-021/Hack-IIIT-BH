@@ -22,17 +22,7 @@ h3 {
   color: white;
   font-size: larger;
 }
-@keyframes goUpM {
-    0% {
-        transform: translateY(10rem);
-        opacity: 0;
-    }
 
-    100% {
-        transform: translateY(0rem);
-        opacity: 1;
-    }
-}
 
 .spons-conatiner {
   padding: 100px;
@@ -92,6 +82,7 @@ h3 {
   opacity: 50%; */
 
   padding-top: 30px;
+  opacity: 0;
 }
 
 .btn {
