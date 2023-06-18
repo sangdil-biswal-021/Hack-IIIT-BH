@@ -162,11 +162,11 @@
     }
 
     .mobileMenu:hover span {
-        background: #08CDFF;
+        background: #f94555;
     }
 
     .mobileMenu.menuOpen span {
-        background: #08CDFF;
+        background: #f94555;
     }
 
     .mobileMenu.menuOpen span:nth-of-type(1) {

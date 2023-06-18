@@ -119,6 +119,7 @@ body {
     max-width: 100rem;
     margin-top: 0rem;
     opacity: 0;
+    filter: hue-rotate(140deg);
 }
 
 @media (max-width:730px) {

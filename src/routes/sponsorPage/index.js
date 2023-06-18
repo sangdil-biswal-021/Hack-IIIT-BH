@@ -38,6 +38,7 @@ const Sponsor = () => {
     }}
     >
         <div className="hello">
+          <div className="blurBG"></div>
           <ul className="my-list">
           <h1>Why Sponsor Us?</h1>
           <h3>
